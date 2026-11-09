@@ -50,6 +50,7 @@ build/
 # ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
 .cache/
+.cache-loader
 .yarn-integrity
 .yarn/build-state.yml
 .yarn/cache
@@ -67,6 +68,7 @@ src/.cache/
 *.log
 *.log.*
 *.tmp
+.DS_Store
 .eslintcache
 .grunt
 .lock-wscript
