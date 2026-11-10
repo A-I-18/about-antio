@@ -42,7 +42,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: false,
+          sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -87,7 +87,7 @@ const config: Config = {
               to: '/docusaurus-features',
             },
             {
-              label: 'Tutorial',
+              label: 'Tutorial - 5min ⏱️',
               to: '/docs/intro',
             },
             {
