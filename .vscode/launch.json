@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "docusaurus start",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run start",
+      "env": {
+        "DOCUSAURUS_BROWSER": "Brave Browser"
+      }
+    },
+    {
+      "name": "docusaurus serve",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run serve",
+      "preLaunchTask": "build"
+    }
+  ]
+}
