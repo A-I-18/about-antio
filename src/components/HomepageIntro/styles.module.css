@@ -1,0 +1,63 @@
+.introSection {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(4rem, 10vw, 8rem) 1.5rem;
+  text-align: center;
+  background:
+    radial-gradient(
+      ellipse at 50% 0,
+      color-mix(in srgb, var(--ifm-color-primary) 12%, transparent),
+      transparent 65%
+    );
+}
+
+.introContent {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.introTitle {
+  margin-bottom: 1.25rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.introDescription {
+  max-width: 38rem;
+  margin: 0 auto 1.75rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.8;
+}
+
+.introLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.introLink span {
+  transition: transform 160ms ease;
+}
+
+.introLink:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+}
+
+.introLink:hover span {
+  transform: translateX(0.25rem);
+}

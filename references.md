@@ -2,6 +2,8 @@
 
 [Docusaurus Docs](https://docusaurus.io/docs)
 
+[Docusaurus walk-through | YouTube](https://www.youtube.com/watch?v=Yhyx7otSksg)
+
 [Deployment | Docusaurus Docs](https://docusaurus.io/docs/deployment)
 
 # GitHub Pages
