@@ -1,43 +1,52 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import Translate from '@docusaurus/Translate';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
-  title: string;
+  title: ReactNode;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: (
+      <Translate id="homepage.features.easyToUse.title">Facile da usare</Translate>
+    ),
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
+      <Translate id="homepage.features.easyToUse.description">
+        Progettato per essere installato facilmente e per aiutarti a mettere
+        online il tuo sito in poco tempo.
+      </Translate>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: (
+      <Translate id="homepage.features.focus.title">
+        Concentrati su ciò che conta
+      </Translate>
+    ),
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+      <Translate id="homepage.features.focus.description">
+        Concentrati sulla documentazione: sposta i tuoi contenuti nella cartella
+        docs e lascia a Docusaurus il resto.
+      </Translate>
     ),
   },
   {
-    title: 'Powered by React',
+    title: (
+      <Translate id="homepage.features.react.title">Realizzato con React</Translate>
+    ),
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+      <Translate id="homepage.features.react.description">
+        Estendi o personalizza il tuo sito riutilizzando i componenti React e lo
+        stesso layout per intestazione e piè di pagina.
+      </Translate>
     ),
   },
 ];

@@ -33,8 +33,16 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'it',
+    locales: ['it', 'en'],
+    localeConfigs: {
+      it: {
+        htmlLang: 'it-IT',
+      },
+      en: {
+        htmlLang: 'en-US',
+      },
+    },
   },
 
   presets: [
@@ -69,6 +77,10 @@ const config: Config = {
         src: 'img/Ionta_Antonio-Foto.jpg',
       },
       items: [
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           to: '/whoami',
           label: 'Chi sono',
