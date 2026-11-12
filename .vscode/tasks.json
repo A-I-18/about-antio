@@ -1,5 +1,13 @@
 {
   "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "locale",
+      "type": "promptString",
+      "description": "Locale for Docusaurus translations",
+      "default": "en"
+    }
+  ],
   "tasks": [
     {
       "label": "install",
@@ -15,6 +23,19 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "docusaurus write-translations",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "run",
+        "write-translations",
+        "--",
+        "--locale",
+        "${input:locale}"
+      ],
+      "problemMatcher": []
     }
   ]
 }

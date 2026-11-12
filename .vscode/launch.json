@@ -1,11 +1,19 @@
 {
   "version": "0.2.0",
+  "inputs": [
+    {
+      "id": "startLocale",
+      "type": "promptString",
+      "description": "Locale for the Docusaurus development server",
+      "default": "it"
+    }
+  ],
   "configurations": [
     {
       "name": "docusaurus start",
       "type": "node-terminal",
       "request": "launch",
-      "command": "npm run start",
+      "command": "npm run start -- --locale ${input:startLocale}",
       "env": {
         "DOCUSAURUS_BROWSER": "Brave Browser"
       }

@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "About antio",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "antio's picture",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Chi sono": {
+    "message": "Chi sono",
+    "description": "Navbar item with label Chi sono"
+  }
+}
