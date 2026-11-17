@@ -10,5 +10,9 @@
   "item.label.Chi sono": {
     "message": "Chi sono",
     "description": "Navbar item with label Chi sono"
+  },
+  "item.label.Curriculum": {
+    "message": "Curriculum",
+    "description": "Navbar item with label Curriculum"
   }
 }

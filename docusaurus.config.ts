@@ -86,6 +86,11 @@ const config: Config = {
           label: 'Chi sono',
           position: 'left',
         },
+        {
+          to: '/cv',
+          label: 'Curriculum',
+          position: 'left',
+        },
       ],
     },
     footer: {

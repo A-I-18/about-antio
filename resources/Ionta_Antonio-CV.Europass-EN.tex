@@ -1,0 +1,178 @@
+% !TEX encoding = UTF-8
+% !TEX program = pdflatex
+% !TEX spellcheck = en_GB
+
+\documentclass[english,a4paper,nologo,notitle]{europasscv}
+\usepackage[english]{babel}
+
+\usepackage[backend=biber,autolang=hyphen,sorting=none,style=numeric,maxbibnames=99,doi=false,isbn=false,maxcitenames=2]{biblatex}
+\usepackage{csquotes}
+\usepackage{europasscv-bibliography}
+
+% \bibliography{europasscv_example}
+% in the bibliography, mark all occurrences in bold:
+% \ecvbibhighlight{Smith}{Katie}{K.}
+
+\ecvname{Antonio Ionta}
+\ecvaddress{04100 Latina (LT), Italy}
+\ecvmobile{+39 3407016687}
+% \ecvtelephone{+39 0773620771}
+\ecvemail{antonio.ionta.18@gmail.com}
+% \ecvhomepage{www.myhomepage.com www.another-homepage.com}
+\ecvgithubpage{https://github.com/A-I-18}
+% \ecvgitlabpage{www.gitlab.com/smith}
+\ecvlinkedinpage{https://www.linkedin.com/in/antonio-ionta/}
+% \ecvorcid[label, link]{0000-0000-0000-0000}
+% \ecvim{AOL Messenger}{katie.smith}
+% \ecvim{Google Talk}{ksmith}
+
+% \ecvgender{M}
+\ecvdateofbirth{18 September 1992}
+\ecvnationality{Italian}
+
+\ecvpicture[width=3.8cm]{Ionta_Antonio-Foto.jpg}
+
+\date{August 2026}
+
+\begin{document}
+  \begin{europasscv}
+
+  \ecvpersonalinfo
+  \ecvbigitem{Position}{Software Engineer and Tech Leader}
+  \ecvblueitem{ABOUT}{Expert in coordinating projects involving the entire software development life cycle, both from a technical and managerial perspective. Developer of Web back-end applications with Java EE and the aid of Spring and Quarkus frameworks and JPA technology. Focus on in-cloud microservice environments. Developer of middleware back-end applications with Apache WSO2, Scala, and Spark, within Data Engineering contexts. Strong supporter of Test Driven Development (TDD). Experienced in agile development principles and adherence to the SCRUM methodology. Enthusiastic about front-end development, explored in small academic projects. Passionate Community Manager.}
+  % --------- TODO: Add LiT URL
+
+  \ecvsection{Professional Experience}
+
+  \ecvtitle{Jan 2026 -- Present}{Back-end Software Engineer}
+  \ecvitem{}{\ecvhighlightcell{\textbf{Adesso Italy S.r.l.}, Viale Edoardo Jenner, 51 -- 20159 Milan (MI), Italy.}}
+
+  \ecvitem{}{
+  Within the development team of a microservices ecosystem for client GNV (Grandi Navi Veloci S.p.A.): porting of the legacy maritime transport booking system for passengers and cargo, with a focus on back-office processes and integration with port operators' systems.
+  }
+
+  \ecvitem{}{
+  \begin{ecvitemize}
+    \item Design and development of back-end services in \textit{Java} (\textit{Spring}), with adoption of advanced architectural patterns for managing distributed complexity (\textit{Saga} for transaction management).
+    \item Data persistence management on relational databases using \textit{JPA}.
+    \item Implementation of asynchronous communication via \textit{Kafka} and caching strategies using \textit{Redis} and \textit{Elasticsearch} for performance optimization.
+    \item Participation in a \textit{LeSS} (Large-Scale Scrum) organizational context, with active contribution to backlog definition through reverse engineering activities on the legacy system. \textit{Atlassian} suite (\textit{Bitbucket}, \textit{Jira}, \textit{Confluence}).
+    \item Use of AI-assisted development tools (\textit{GitHub Copilot}) to support both functional definition and implementation.
+  \end{ecvitemize}
+  }  
+
+  \ecvtitle{Jul 2025 -- present}{Software Engineer}
+  \ecvitem{}{\ecvhighlightcell{\textbf{Bemind Interactive S.r.l.}, Via del Truglio, 1 -- 04100 Latina (LT), Italy.}}
+
+  \ecvitem{}{
+  Development and deployment of full-stack Web applications with TypeScript and Node.js integrating AI tools. Setup of agile workflow and issue tracking.
+  }
+
+  \ecvitem{}{
+  \begin{ecvitemize}
+    \item Independent development and deployment of a \textit{Fastify} application for data scraping activities, using OCR processing (\textit{Llama Parse}) and data persistence through ORM (\textit{Prisma}).
+    \item Participation in the AI-driven development of software components for "Optims", a SaaS platform for managing construction sites, employees, equipment, training, and compliance in the construction sector; working in a team on a \textit{Next.js} (front-end), \textit{NestJS}, and \textit{Prisma} (back-end) stack, with deployment on \textit{Railway} and an agentic workflow based on \textit{Claude Code}, \textit{Codex}, and \textit{Cursor}, integrated via MCP with \textit{Chrome DevTools} and \textit{ClickUp}.
+  \end{ecvitemize}
+  }  
+
+  \ecvtitle{May 2023 -- Jun 2025}{Back-end Software Engineer and Tech Leader}
+  \ecvitem{}{\ecvhighlightcell{\textbf{AizoOn Consulting S.r.l.}, Via Luca Gaurico, 9/11 -- 00143 Rome, Italy.}}
+  
+  \ecvitem{}{
+  Design, development, and maintenance of “aramis”, a network monitoring platform for cybersecurity risk detection using Machine Learning. Monolithic architecture partitioned into functional components cooperating through a plugin-pattern and supported by a data streaming platform (\textit{Apache Kafka}). Back-end in Java/Spring, TDD approach, quality assurance with \textit{SonarQube}. One of the technical leaders of the working group. \newline
+  Head of a project for the development of a microservices-based Web portal for Public Administration, deployed on Azure cloud. Hybrid back-end Java/Spring, Python/FastAPI. Authentication via multiple providers, including SPID, CIE, CNS; custom authorization with Spring Security. Technical and managerial leadership. \newline
+  Issue tracking aligned with the agile Scrum methodology using \textit{YouTrack} and \textit{Azure DevOps}.
+  }
+  
+  \ecvitem{}{
+  \begin{ecvitemize}
+    \item Architecture and model design of importable Java functional components through \textit{Maven}.
+    \item Development of Java APIs for interaction with \textit{MongoDB} using low-level driver functionalities for custom (de)serialization of data.
+    \item Integration of the Java library \textit{Tribuo} into application logic to efficiently perform specific Machine Learning operations (clustering).
+    \item Creation of a protected-access documentation system based on \textit{Git-flow}-like principles, \textit{Docusaurus} stack, and \textit{GitLab Pages}.
+    \item Deployment of Java applications on remote \textit{Linux} servers (via \textit{SSH}) using \textit{SystemD} configurations. Monitoring via the \textit{Telegraf}, \textit{InfluxDB}, \textit{Grafana} stack and JVM-related tools.
+    \item Database change management with rollback support, applying DevOps principles using \textit{Liquibase} and \textit{Flyway}.
+    \item Use of main Azure in-cloud services, e.g., AD B2C, AKS, key vault, data storage.
+  \end{ecvitemize}
+  }
+  
+  \ecvtitle{Mar 2021 -- May 2023}{Back-end Developer}
+  \ecvitem{}{\ecvhighlightcell{\textbf{Exaltech S.r.l.}, Via Ufente, 20 -- 04100 Latina (LT), Italy.\newline Full-remote consulting for client \textbf{e-distribuzione S.p.A. (Enel Group)}.}}
+  \ecvitem{}{
+  Development of back-end Web applications with \textit{Java EE}, \textit{Spring} framework, and \textit{JPA} technology, following the microservices model, and development of back-end middleware applications with \textit{Apache WSO2}, \textit{Scala} + \textit{Spark}, as part of a large-scale digitalization (“Platformization”) project of the e-distribuzione power grid information system across several regions worldwide.
+  }
+  \ecvitem{}{
+  Activities carried out in adherence to the agile \textit{Scrum} software engineering methodology, using \textit{Jira}.
+  }
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Server-side design and development of a microservice for retrieving disaggregated data from remote sources (e.g., CSV files on SharePoint), mapping and exposing data in different formats with filtering capabilities, and persisting extracted data in a relational database with scheduled batch insertions. \newline
+      Server-side design and development of a business-service proxy for orchestration in the deployment environment.
+      \item Analysis, design, and server-side development of various batch business-services for integrating large volumes of data from multiple disaggregated remote sources.
+      \item Monitoring, maintenance, and debugging of server-side services in the deployment environment.
+  \end{ecvitemize}
+  }
+
+  \ecvtitle{Sep 2018 -- Mar 2021}{Software Developer}
+  \ecvitem{}{\ecvhighlightcell{\textbf{Exaltech S.r.l.}, Via Ufente, 20 -- 04100 Latina (LT), Italy.}}
+  \ecvitem{}{
+  Initial internship aimed at employment. \newline
+  Development of Web back-end applications with \textit{Java EE} using \textit{Spring} and \textit{Quarkus} frameworks and \textit{JPA} technology, following the microservices model. \newline
+  Introduction to front-end software development using \textit{Angular JS} and \textit{Webpack}.
+  }
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Server-side design and development of a demonstrative system for managing material handling for a hypothetical transport company: management of clients, suppliers, routes, costs, invoicing.
+      \item Server-side design and development of a file management and storage system across multiple platforms with image editing features for internal company use.
+      \item Server-side design and development of an internal system for managing worker occupancy estimates, interfacing with the corporate timesheet.
+      \item Server-side design and development of an electronic invoicing management system for consumption by banks and related clients. \newline
+      Microservices architecture design, \textit{Oracle} database management, and implementation in \textit{Spring Boot 2} and \textit{Java 8}: XML invoice archiving and validation, submission to Public Administration, management of invoice outcomes from the Interchange System; data caching for users and companies using \textit{Redis}. BPM and Message Broker systems were also integrated.
+      \item Server-side development of a demonstrative Web application automating the matching between electronic invoice line items and purchase orders.
+  \end{ecvitemize}
+  }
+  
+  \pagebreak
+  
+  \ecvsection{Education and Training}
+  
+  \ecvtitlelevel{2017--2023}{Master’s Degree in ``Engineering in Computer Science'' with final grade 110/110 cum laude}{ISCED~7}
+  \ecvitem{}{
+  \ecvhighlightcell{\textbf{University of Rome ``La Sapienza''} – Faculty of ``Information Engineering, Computer Science and Statistics''.}}
+  \ecvitem{}{\ecvhighlight{Thesis}\quad ``Telemetry Monitoring in Industry 4.0: A Comparative Analysis of NoSQL-based Solutions with Focus on MongoDB and InfluxDB''}
+  \ecvitem{}{
+  Re-engineering of a software component of a platform used for mobile, real-time visualization of temporal trends of physical quantities from machines or sensors within an industrial plant (``time series in IIoT''). The redesign focused particularly on the data layer, studying non-relational persistence approaches through a comparative workflow featuring \textit{MongoDB} and \textit{InfluxDB} as main actors. \newline
+  The work included an implementation part resulting in a Java application capable of performing \textit{MongoDB}-\textit{InfluxDB} data porting, mapping the different data models, and benchmarking query performance (using the \textit{JMH} library). \newline
+  \url{https://github.com/ai-master-thesis/master-thesis-influxdb-porting}
+  }
+  
+  \ecvtitlelevel{2011--2017}{Bachelor’s Degree in ``Ingegneria dell'Informazione'' with final grade 110/110 cum laude}{ISCED~6}
+  \ecvitem{}{
+  \ecvhighlightcell{\textbf{University of Rome ``La Sapienza''} – Faculty of ``Information Engineering, Computer Science and Statistics''.}}
+  \ecvitem{}{\ecvhighlight{Thesis}\quad update, development, and testing of a Web application based on the \textit{Moodle} platform for managing e-learning activities with a focus on peer-assessment.}
+  
+  \ecvsection{Personal Skills}
+  \ecvmothertongue{Italian}
+  \ecvlanguageheader
+  \ecvlanguage{English}{B2}{B2}{B2}{B2}{B2}
+  \ecvlanguagecertificate{Master’s degree obtained following a course delivered entirely in English.}
+  \ecvlanguagefooter
+
+  % --- TODO WIP
+
+  % \pagebreak
+
+  % \ecvsection{Computer Skills}
+
+  % \ecvblueitem{Back-end}{
+  % \ecvhighlight{Java}\quad\ecvhighlight{Scala}
+  % }
+  
+  
+  % \nocite{*}
+  % \renewcommand{\section}[2]{\ecvsection{#2}}
+  % \printbibtabular[title=Projects]
+  
+
+\end{europasscv}
+  
+\end{document}
